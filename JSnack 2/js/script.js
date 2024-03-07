@@ -15,7 +15,7 @@ const zucchina2 = {
 const zucchina3 = {
    varietà: 'marrone',
    peso: '2.5Kg',
-   lunghezza: '15cm'
+   lunghezza: '14cm'
    };
 
 const zucchina4 = {
@@ -39,7 +39,7 @@ const zucchina6 = {
 const zucchina7 = {
    varietà: 'blu',
    peso: '1.2Kg',
-   lunghezza: '15cm'
+   lunghezza: '18cm'
    };
 
 const zucchina8 = {
@@ -62,5 +62,23 @@ const zucchina10 = {
 
 
 
+   let x;
+   let zucchina;
 
+
+
+for(let i = 1; i < 11; i++){
+
+   console.log(i)
    
+   x = 'zucchina' + i;
+
+   console.log(x)
+
+   for(proprieties of x){
+
+      console.log(proprieties.varietà)
+   }
+
+};
+
