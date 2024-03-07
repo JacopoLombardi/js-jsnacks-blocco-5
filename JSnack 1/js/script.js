@@ -38,7 +38,7 @@ const elencoZucchine = [
    },
    {
       varietà: 'nera',
-      peso: '1.9Kg',
+      peso: '1.4Kg',
       lunghezza: '17cm'
    },
    {
@@ -54,7 +54,16 @@ const elencoZucchine = [
 ];
 
 
+const output = document.querySelector('._output');
 
 
+let totale = 0;
 
 
+// ciclo gli oggetti dell'array e prendo solo il peso per poi trasformarlo in numero e sommarlo
+// 'parseFloat()' serve per mantenere i numeri decimali
+elencoZucchine.forEach(zucchina => totale = totale + parseFloat(zucchina.peso));
+
+output.innerHTML += `${totale} Kg`;
+
+console.log(totale);
